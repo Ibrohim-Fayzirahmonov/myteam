@@ -147,7 +147,73 @@ header {
 
 }
 
+.build {
+    background: #012F34;
 
+    .build__body {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 140px;
+
+        .build__title {
+            padding-top: 200px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 48px;
+            width: 45%;
+            color: #FFFFFF;
+        }
+
+        .build__list {
+            display: flex;
+            flex-direction: column;
+            padding-top: 200px;
+            row-gap: 32px;
+
+            .build__item {
+                display: flex;
+                max-width: 520px;
+                column-gap: 23px;
+
+                .build__item__img {
+                    width: 72px;
+                    height: 72px;
+                }
+
+                .build__item__subtitle {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 28px;
+                    margin-bottom: 16px;
+                    color: #F67E7E;
+                }
+
+                .build__text {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 25px;
+                    color: #FFFFFF;
+                    mix-blend-mode: normal;
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+
+    .build__body::before {
+        content: "";
+        position: absolute;
+        top: 150px;
+        left: 0;
+        width: 50px;
+        height: 4px;
+        background: #F67E7E;
+    }
+}
 
 
 

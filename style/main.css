@@ -116,6 +116,67 @@ header .header__body .header__more {
   right: 0;
 }
 
+.build {
+  background: #012F34;
+}
+.build .build__body {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 140px;
+}
+.build .build__body .build__title {
+  padding-top: 200px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  width: 45%;
+  color: #FFFFFF;
+}
+.build .build__body .build__list {
+  display: flex;
+  flex-direction: column;
+  padding-top: 200px;
+  row-gap: 32px;
+}
+.build .build__body .build__list .build__item {
+  display: flex;
+  max-width: 520px;
+  -moz-column-gap: 23px;
+       column-gap: 23px;
+}
+.build .build__body .build__list .build__item .build__item__img {
+  width: 72px;
+  height: 72px;
+}
+.build .build__body .build__list .build__item .build__item__subtitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 16px;
+  color: #F67E7E;
+}
+.build .build__body .build__list .build__item .build__text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+.build .build__body::before {
+  content: "";
+  position: absolute;
+  top: 150px;
+  left: 0;
+  width: 50px;
+  height: 4px;
+  background: #F67E7E;
+}
+
 @media screen and (max-width: 768px) {
   .container {
     padding: 0 40px;
