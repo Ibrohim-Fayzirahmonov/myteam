@@ -162,7 +162,7 @@ header .header__body .header__more {
     right: inherit;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 450px) {
   .container {
     padding: 0 24px;
   }
