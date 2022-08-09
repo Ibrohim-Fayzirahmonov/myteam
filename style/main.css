@@ -110,14 +110,10 @@ header .header__body .header__more {
   color: #FFFFFF;
   width: 85%;
 }
-.hero .hero__body::before {
-  content: "";
+.hero .hero__body .hero__img {
   position: absolute;
-  width: 358px;
-  height: 100px;
   bottom: 0;
   right: 0;
-  background: url(/images/Group7.png);
 }
 
 @media screen and (max-width: 768px) {
@@ -158,16 +154,13 @@ header .header__body .header__more {
     width: 100%;
     margin: 0 auto;
   }
-  .hero .hero__body::before {
-    right: inherit;
+  .hero .hero__img {
+    width: 100%;
   }
 }
 @media screen and (max-width: 450px) {
   .container {
     padding: 0 24px;
-  }
-  header {
-    width: 375px;
   }
   header .header__body .header__logo {
     width: 120px;
@@ -180,9 +173,6 @@ header .header__body .header__more {
   }
   header .header__body .header__more {
     display: flex;
-  }
-  .hero {
-    width: 375px;
   }
   .hero .hero__body {
     flex-direction: column;
@@ -201,9 +191,5 @@ header .header__body .header__more {
   }
   .hero .hero__body .hero__info .hero__line {
     display: none;
-  }
-  .hero .hero__body::before {
-    right: inherit;
-    width: 95%;
   }
 }/*# sourceMappingURL=main.css.map */
