@@ -419,6 +419,10 @@ footer .footer__body .footer__left .footer__copy {
     width: 240px;
     margin-bottom: 18px;
   }
+  .hero .hero__body .hero__title .hero__title__pink {
+    font-size: 40px;
+    line-height: 40px;
+  }
   .hero .hero__body .hero__info {
     display: flex;
     flex-direction: column-reverse;
@@ -461,15 +465,6 @@ footer .footer__body .footer__left .footer__copy {
   .build .build__body .build__list .build__item .build__text {
     text-align: center;
   }
-  .build .build__body::before {
-    content: "";
-    position: absolute;
-    top: 150px;
-    left: 0;
-    width: 50px;
-    height: 4px;
-    background: #F67E7E;
-  }
   .delivery .delivery__body {
     display: flex;
     flex-direction: column;
@@ -487,48 +482,6 @@ footer .footer__body .footer__left .footer__copy {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .delivery .delivery__body .delivery__list .delivery__item {
-    position: relative;
-    width: 350px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  .delivery .delivery__body .delivery__list .delivery__item .delivery__text {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 25px;
-    padding-top: 20px;
-    text-align: center;
-    z-index: 2;
-    color: #FFFFFF;
-    margin-bottom: 24px;
-  }
-  .delivery .delivery__body .delivery__list .delivery__item .delivery__name {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 28px;
-    text-align: center;
-    color: #79C8C7;
-  }
-  .delivery .delivery__body .delivery__list .delivery__item .delivery__info {
-    font-size: 13px;
-    line-height: 18px;
-    text-align: center;
-    color: #FFFFFF;
-    margin-bottom: 32px;
-  }
-  .delivery .delivery__body .delivery__list .delivery__item::before {
-    content: "";
-    width: 67px;
-    height: 56px;
-    background-image: url(/images/“.png);
-    position: absolute;
-    top: 0;
-    z-index: 1;
   }
   .ready .ready__body {
     display: flex;
@@ -560,6 +513,9 @@ footer .footer__body .footer__left .footer__copy {
     align-items: center;
     flex-direction: column;
     margin-bottom: 40px;
+  }
+  footer .footer__body .footer__center .footer__text {
+    text-align: center;
   }
   footer .footer__body .footer__left {
     justify-content: center;
