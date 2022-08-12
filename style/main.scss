@@ -94,6 +94,16 @@ header {
 .hero {
     background: #014E56;
     padding-top: 140px;
+    position: relative;
+
+    &::before {
+        content: "";
+        background-image: url(/images/Group8.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0;
+        top: 150px;
+    }
 
     .hero__body {
         position: relative;
@@ -109,8 +119,6 @@ header {
             color: #FFFFFF;
             max-width: 600px;
 
-            // width: 50%;
-            // flex: 1;
             .hero__title__pink {
                 font-style: normal;
                 font-weight: 700;
@@ -146,20 +154,8 @@ header {
             position: absolute;
             bottom: 0;
             right: 0;
-
         }
     }
-
-    // .hero__body::before {
-    //     content: "";
-    //     position: absolute;
-    //     width: 358px;
-    //     height: 100px;
-    //     bottom: 0;
-    //     right: 0;
-    //     background: url(/images/Group7.png);
-    // }
-
 }
 
 .build {
@@ -426,7 +422,7 @@ footer {
 
 
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:992px) {
     .container {
         padding: 0 40px;
     }
@@ -482,14 +478,30 @@ footer {
             width: 100%;
         }
     }
+    .ready {
+        .ready__body {
+            @include dis-item;
+
+            .ready__title {
+                font-size: 32px;
+                line-height: 32px;
+                margin-bottom: 24px;
+                width: 336px;
+                text-align: center;
+            }
+
+            .ready__btn {
+                margin-bottom: 25px;
+            }
+        }
+
+    }
 }
 
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:767px) {
     .container {
         padding: 0 24px;
-        // width: 327px;
-        // margin: 0 auto;
     }
 
     header {
@@ -537,13 +549,8 @@ footer {
                 .hero__line {
                     display: none;
                 }
-
-                .hero__text {}
             }
         }
-
-        .hero__img {}
-
     }
 
     .build {

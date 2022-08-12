@@ -79,6 +79,15 @@ header .header__body .header__more {
 .hero {
   background: #014E56;
   padding-top: 140px;
+  position: relative;
+}
+.hero::before {
+  content: "";
+  background-image: url(/images/Group8.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 150px;
 }
 .hero .hero__body {
   position: relative;
@@ -351,7 +360,7 @@ footer .footer__body .footer__left .footer__copy {
   opacity: 0.6;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .container {
     padding: 0 40px;
   }
@@ -392,8 +401,22 @@ footer .footer__body .footer__left .footer__copy {
   .hero .hero__img {
     width: 100%;
   }
+  .ready .ready__body {
+    display: flex;
+    align-items: center;
+  }
+  .ready .ready__body .ready__title {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 24px;
+    width: 336px;
+    text-align: center;
+  }
+  .ready .ready__body .ready__btn {
+    margin-bottom: 25px;
+  }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 767px) {
   .container {
     padding: 0 24px;
   }
