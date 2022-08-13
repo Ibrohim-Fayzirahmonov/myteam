@@ -598,6 +598,10 @@ footer .footer__body .footer__left .footer__copy {
     text-align: center;
     margin-bottom: 24px;
   }
+  .hero .hero__body .hero__title .hero__title__pink {
+    font-size: 64px;
+    line-height: 56px;
+  }
   .hero .hero__body .hero__info {
     display: flex;
     flex-direction: column-reverse;
